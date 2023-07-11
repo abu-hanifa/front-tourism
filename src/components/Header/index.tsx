@@ -1,4 +1,3 @@
-import "./Header.module.css";
 import style from "./Header.module.css";
 import logo from "../../images/logo.png";
 import user from "../../icons/user.png";
@@ -15,7 +14,7 @@ function Header() {
             <a href="/">Текст 2</a>
           </li>
         </ul>
-        <div className="logo-block">
+        <div>
           <img src={logo} alt="логотип" />
         </div>
         <ul>
