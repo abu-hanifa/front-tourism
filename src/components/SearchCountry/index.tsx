@@ -2,7 +2,7 @@ import style from "./SearchCountry.module.css";
 import arrow from "../../icons/arrow.png";
 import button from "../../images/button.png";
 import lupa from "../../icons/lupa.png";
-
+//
 function SearchCountry() {
   return (
     <div className={style.search}>
