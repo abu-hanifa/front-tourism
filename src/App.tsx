@@ -1,12 +1,19 @@
+
+
+import Header from "./components/Header"
 import styles from './App.module.css'
 import MyCabinet from './components/myCabinet/MyCabinet'
 function App() {
 
   return (
-    <>
-    <div className={styles.null}></div>
-     <MyCabinet/>
+<>
+<MyCabinet/>
+
+    <div className="wrapper">
+      <Header />
+    </div>
     </>
+
   )
 }
 
