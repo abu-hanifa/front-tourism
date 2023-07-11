@@ -1,0 +1,5 @@
+@import "./components/Header/Header.module.css";
+
+body {
+    margin: 0;
+}
