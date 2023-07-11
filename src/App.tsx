@@ -8,6 +8,7 @@ function App() {
       <div className={styles.background}></div>
       <Header />
       <SearchCountry />
+      test
     </div>
   );
 }
