@@ -1,6 +1,7 @@
-import styles from './index.module.css'
-import Header from "./components/Header"
 
+
+import Header from "./components/Header"
+import styles from './App.module.css'
 function App() {
 
   return (
