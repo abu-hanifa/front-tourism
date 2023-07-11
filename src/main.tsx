@@ -4,9 +4,9 @@ import { Provider } from 'react-redux'
 import App from './App.tsx'
 import { store } from './components/App/app.store.tsx'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
- <Provider store={store}>
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
     <App />
-    </Provider>
-  
-)
+  </React.StrictMode>
+);

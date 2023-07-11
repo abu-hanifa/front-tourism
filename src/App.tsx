@@ -1,10 +1,12 @@
+import styles from "./App.module.css";
+import Header from "./components/Header";
 
 
 import Header from "./components/Header"
 import styles from './App.module.css'
 import MyCabinet from './components/myCabinet/MyCabinet'
-function App() {
 
+function App() {
   return (
 <>
 <MyCabinet/>
@@ -13,8 +15,7 @@ function App() {
       <Header />
     </div>
     </>
-
   )
 }
 
-export default App
+export default App;
