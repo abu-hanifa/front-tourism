@@ -1,0 +1,26 @@
+.search {
+  text-align: center;
+  margin-top: 200px;
+}
+.search span {
+  font-size: 38px;
+}
+
+.search_country {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 100px 450px;
+  padding: 8px;
+}
+.search_country span {
+  color: grey;
+  font-size: 14px;
+  padding-right: 50px;
+}
+
+.button_icon {
+  margin-left: -28px;
+  margin-bottom: 5px;
+}

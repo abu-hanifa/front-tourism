@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
 import Header from "./components/Header";
+import SearchCountry from "./components/SearchCountry";
 
 
 import Header from "./components/Header"
@@ -13,6 +14,7 @@ function App() {
 
     <div className="wrapper">
       <Header />
+      <SearchCountry />
     </div>
     </>
   )

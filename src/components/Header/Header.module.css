@@ -7,7 +7,7 @@ header {
 .nav_bar {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-left: 480px;
 }
 
 .nav_bar img {
