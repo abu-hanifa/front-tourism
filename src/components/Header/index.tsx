@@ -1,9 +1,12 @@
 import "./Header.module.css";
+import style from "./Header.module.css";
+import logo from "../../images/logo.png";
+import user from "../../icons/user.png";
 
 function Header() {
   return (
     <header>
-      <div className="nav-bar">
+      <div className={style.nav_bar}>
         <ul>
           <li>
             <a href="/">Текст 1</a>
@@ -13,7 +16,7 @@ function Header() {
           </li>
         </ul>
         <div className="logo-block">
-          <img src="/images/logo.png" alt="логотип" />
+          <img src={logo} alt="логотип" />
         </div>
         <ul>
           <li>
@@ -24,8 +27,9 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className="profile">
-        <img src="/icons/user.png" alt="профиль" />
+      <div className={style.profile}>
+        <img src={user} alt="профиль" />
+        <span>User_name</span>
       </div>
     </header>
   );

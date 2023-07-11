@@ -1,13 +1,13 @@
-import styles from './index.module.css'
-import Header from "./components/Header"
+import styles from "./App.module.css";
+import Header from "./components/Header";
 
 function App() {
-
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
+      <div className={styles.background}></div>
       <Header />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
