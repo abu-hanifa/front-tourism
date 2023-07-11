@@ -1,10 +1,17 @@
 header {
   display: flex;
   justify-content: space-between;
+  margin: 30px;
 }
 
-.nav-bar {
+.nav_bar {
   display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.nav_bar img {
+  padding-left: 20px;
 }
 
 ul {
@@ -12,10 +19,16 @@ ul {
   display: flex;
 }
 
-li {
-  padding-right: 10px;
-}
-
 a {
   text-decoration: none;
+  padding-right: 20px;
+  color: #fff;
+}
+
+.profile {
+  padding-top: 17px;
+}
+
+.profile img {
+  padding-right: 15px;
 }
