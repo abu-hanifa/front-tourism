@@ -20,7 +20,7 @@ function SearchCountry() {
 
 
       {/*      
-        <div className={style.button}>
+        <div className={style.buttogin}>
           <input type="text" />
           <img width={35} src={button} alt="поиск" />
           <img className={style.button_icon} src={lupa} alt="лупа" />
