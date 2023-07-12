@@ -6,7 +6,8 @@ import { store } from './components/App/app.store.tsx'
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+    </Provider>
+  
 );
