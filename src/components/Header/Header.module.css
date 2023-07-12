@@ -1,17 +1,22 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   margin: 30px;
+}
+ul li {
+  margin: 0;
+  padding: 0%;
 }
 
 .nav_bar {
   display: flex;
+ margin: auto;
   align-items: center;
-  margin-left: 480px;
+ 
 }
 
 .nav_bar img {
-  padding-left: 20px;
+  padding:0 20px;
 }
 
 ul {
@@ -30,5 +35,5 @@ a {
 }
 
 .profile img {
-  padding-right: 15px;
+  margin-right: 15px;
 }
