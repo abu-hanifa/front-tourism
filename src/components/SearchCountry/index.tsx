@@ -7,10 +7,11 @@ function SearchCountry() {
   return (
     <div className={style.search}>
       <span>Где бы вы хотели отдохнуть?</span>
-      {/* <div className={style.search_country}> */}
+    
 
 
-      <div className={style.input_flex}>
+  <div className={style.input_center}>
+  <div className={style.input_flex}>
         <div className='input-group mb-3' >
           <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
           <div className="input-group-append">
@@ -18,19 +19,8 @@ function SearchCountry() {
           </div>
         </div>
       </div>
-
-
-
-
-      <div className="input-group mb-3">
-  <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <div className="input-group-append">
-    <button className="btn btn-outline-secondary" type="button">Button</button>
   </div>
 </div>
-
-
-    </div>
   );
 }
 

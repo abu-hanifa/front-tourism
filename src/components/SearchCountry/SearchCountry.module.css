@@ -28,15 +28,16 @@
   margin-left: auto;
   margin-right: 5px;
 }
-.input_width {
-  width: 40%;
-  border-radius: 50px;
-  padding: 10px;
-}
+
 
 .input_flex {
+  width: 40%;
   display: flex;
   justify-content: center;
   text-align: center;
+  
 }
-
+.input_center {
+ display: flex;
+ justify-content: center;
+}
