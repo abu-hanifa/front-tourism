@@ -41,11 +41,9 @@
 .input_center {
  display: flex;
  justify-content: center;
-<<<<<<< HEAD
-=======
+
  margin-top: 50px;
 }
 .input_center button {
   margin-left: 15px;
->>>>>>> chat
 }
