@@ -6,7 +6,7 @@ import { AppDispatch } from '../App/app.store'
 
 
 
-function SingUp() {
+function SingUp():JSX.Element {
     const [name, setName] = useState('')
     const [lastname, setLastname] = useState('')
     const [email, setEmail] = useState('')

@@ -8,6 +8,7 @@ export interface Data {
 
 }
 export interface IUsers {
+    _id: string,
     name: string,
     lastname: string,
     email: string,

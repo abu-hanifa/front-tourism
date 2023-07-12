@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux"
 import {useEffect} from "react"
 import { fetchUsers } from "../features/data.slice"
-const Users = () => {
-    const dispatch = useDispatch()
-    const users = useSelector((state) => state.users.users)
+import { AppDispatch, RootState } from "../App/app.store"
+function Users ():JSX.Element  {
+    const dispatch = useDispatch<AppDispatch>()
+    const users = useSelector((state: RootState ) => state.application.users)
 
 useEffect(() => {
     dispatch(fetchUsers())

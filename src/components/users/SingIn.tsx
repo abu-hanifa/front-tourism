@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { authSignIn } from '../features/applicationSlice'
 import { AppDispatch } from '../App/app.store'
 
-function SingIn() {
+function SingIn(): JSX.Element {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
