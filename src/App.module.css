@@ -5,6 +5,7 @@ body {
 }
 
 .wrapper {
+  height: 100vh;
   position: relative;
   overflow: hidden;
   font-size: 18px;
