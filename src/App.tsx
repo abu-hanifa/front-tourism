@@ -1,23 +1,15 @@
-import Header from "./components/Header"
-import styles from './App.module.css'
-import MyCabinet from './components/myCabinet/MyCabinet'
-import Card from "./components/Cards/Card"
-
+import Header from "./components/Header";
+import styles from "./App.module.css";
+import SearchCountry from "./components/SearchCountry";
 
 function App() {
   return (
-<>
-<MyCabinet/>
-
-
-
-    <div className="wrapper">
-    <Card/>
+    <div className={styles.wrapper}>
+      <div className={styles.background}></div>
       <Header />
       <SearchCountry />
     </div>
-    </>
-  )
+  );
 }
 
 export default App;
