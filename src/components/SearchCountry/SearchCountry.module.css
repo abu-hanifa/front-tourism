@@ -6,6 +6,7 @@
   font-size: 38px;
 }
 
+
 .search_country {
   display: flex;
   justify-content: space-between;
@@ -40,4 +41,8 @@
 .input_center {
  display: flex;
  justify-content: center;
+ margin-top: 50px;
+}
+.input_center button {
+  margin-left: 15px;
 }
