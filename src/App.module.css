@@ -6,8 +6,6 @@ body {
 
 .wrapper {
   position: relative;
-  margin: 0;
-  width: 100vw;
   overflow: hidden;
   font-size: 18px;
   color: #fff;

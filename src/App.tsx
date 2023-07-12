@@ -1,20 +1,17 @@
+
 import Header from "./components/Header"
 import styles from './App.module.css'
-import MyCabinet from './components/myCabinet/MyCabinet'
 import SearchCountry from "./components/SearchCountry";
-
+//
 function App() {
   return (
-<>
-
-
-    <div className="wrapper">
+    <div className={styles.wrapper}>
+      <div className={styles.background}></div>
       <Header />
       <SearchCountry />
-      <MyCabinet/>
+      test
     </div>
-    </>
-  )
+  );
 }
 
 export default App;
