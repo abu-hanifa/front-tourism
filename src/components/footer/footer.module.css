@@ -9,14 +9,19 @@ footer img {
 
 .footer_content {
     display: flex;
-    justify-content: space-between;
-    margin: 90px 100px 50px 360px;
+ justify-content: center;
+    padding:  100px 0;
 }
 
 .list li:not(:last-child) {
 margin-right: 140px;
 }
 
-.list li:first-child {
-    margin: 95px 100px 0 130px 95px;
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex img:not(:last-child) {
+    margin-right: 25px;
 }

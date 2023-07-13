@@ -27,13 +27,15 @@ function App() {
       <div className={styles.wrapper}>
         <div className={styles.background}></div>
         <Header />
-        <Footer/>
+        
+      
    
         <Routes>
           <Route path="/register" element={<SingUp />} />
           <Route path="/email" element={<SingIn />} />
           <Route path="/" element={<SearchCountry />} />
         </Routes>
+        <Footer/>
       </div>
     );
   }
@@ -47,7 +49,6 @@ function App() {
 
       <Header />
       <SearchCountry />
-      
 
       
       
