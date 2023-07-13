@@ -2,6 +2,9 @@ import Header from "./components/Header";
 import styles from "./App.module.css";
 import SearchCountry from "./components/SearchCountry";
 
+import Card from "./components/Cards/Card";
+import Cards from "./components/Cards/Cards";
+
 import Footer from "./components/footer/Footer";
 
 import { Link, Navigate, Route, Routes } from "react-router-dom";
@@ -42,6 +45,13 @@ function App() {
       <div className={styles.wrapper}>
       
       <div className={styles.background}></div>
+
+      <Cards/>
+      
+    </div>
+
+    
+  );
 
       <Header />
       <SearchCountry />

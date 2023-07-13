@@ -6,8 +6,7 @@ import { store } from './components/App/app.store.tsx'
 import { BrowserRouter } from 'react-router-dom'
 
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
- 
+ReactDOM.createRoot(document.getElementById("root")).render( 
     <Provider store={store}>
       <BrowserRouter>
     <App />
