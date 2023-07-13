@@ -1,4 +1,4 @@
-import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import {  createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
 export interface Data {
     name: string,
@@ -62,7 +62,7 @@ export const fetchUsers = createAsyncThunk<IUsers[], void, {rejectValue: string 
         try {
             
             const res = await fetch('http://localhost:4000/users', {
-              
+               
             })
             const users = await res.json()
             if(users.error) {

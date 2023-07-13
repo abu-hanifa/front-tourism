@@ -2,10 +2,12 @@ import style from "./SearchCountry.module.css";
 import arrow from "../../icons/arrow.png";
 import button from "../../images/button.png";
 import lupa from "../../icons/lupa.png";
+import { Link } from "react-router-dom";
 //
 function SearchCountry() {
   return (
     <div className={style.search}>
+      
       <span>Где бы вы хотели отдохнуть?</span>
     
 
