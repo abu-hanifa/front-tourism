@@ -1,0 +1,27 @@
+
+footer {
+    background-color: #181C25;
+}
+footer img {
+    display: flex;
+    margin-top: 100px;
+}
+
+.footer_content {
+    display: flex;
+ justify-content: center;
+    padding:  100px 0;
+}
+
+.list li:not(:last-child) {
+margin-right: 140px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex img:not(:last-child) {
+    margin-right: 25px;
+}

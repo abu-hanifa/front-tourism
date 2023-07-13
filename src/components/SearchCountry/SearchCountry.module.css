@@ -1,10 +1,11 @@
 .search {
   text-align: center;
-  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .search span {
   font-size: 38px;
 }
+
 
 .search_country {
   display: flex;
@@ -27,4 +28,25 @@
 .button  {
   margin-left: auto;
   margin-right: 5px;
+}
+
+
+.input_flex {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.input_center {
+ display: flex;
+ justify-content: center;
+
+
+
+
+ margin-top: 50px;
+}
+.input_center button {
+  margin-left: 15px;
 }

@@ -37,3 +37,11 @@ a {
 .profile img {
   margin-right: 15px;
 }
+.butt {
+ border: none;
+ background-color: transparent;
+ color: #fff;
+ padding: 0;
+}
+
+
