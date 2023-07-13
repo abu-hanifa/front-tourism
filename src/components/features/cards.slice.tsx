@@ -4,12 +4,16 @@ const initialState = {
   loading: false,
   error: null,
 };
+
 export const fetchCards = createAsyncThunk(
   "fetch/cards",
   async (data, thunkAPI) => {
     try {
       const res = await fetch("http://localhost:4000/publications");
       const cards = await res.json();
+      if(cards.error) {
+        return thunkAPI.rejectWithValue(cards.error)
+      }
       return cards;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
@@ -19,13 +23,17 @@ export const fetchCards = createAsyncThunk(
 
 export const addCards = createAsyncThunk<any,any,any>(
   "add/cards",
-  async ({ header, geoTag, image, desc }, thunkAPI) => {
+  async ({ header, geoTag, image, desc,price }, thunkAPI) => {
     try {
       const formData = new FormData();
       formData.append("header", header);
       formData.append("geoTag", geoTag);
-      formData.append("image", image);
       formData.append("desc", desc);
+      formData.append("price", price);
+      for(let item of image) {
+        formData.append("img", item);
+      }
+      console.log("SLICE", image[0])
       const res = await fetch("http://localhost:4000/addPublications", {
         method: "POST",
         body: formData,
@@ -36,13 +44,14 @@ export const addCards = createAsyncThunk<any,any,any>(
         return thunkAPI.rejectWithValue(cards.error)
       }
       
-      return thunkAPI.fulfillWithValue(cards);
-      return cards;
+    
+      return cards
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
   }
 );
+
 
 const cardsSlice = createSlice({
   name: "cards",
@@ -74,8 +83,10 @@ const cardsSlice = createSlice({
       .addCase(addCards.fulfilled, (state, action) => {
         state.loading = false;
         state.error = null;
-        state.cards = action.payload;
-      });
+        state.cards.push(action.payload);
+      })
+   
+      
   },
 });
 

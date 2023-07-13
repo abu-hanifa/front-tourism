@@ -1,0 +1,23 @@
+.main_block {
+  background-color: rgba(0, 0, 0, 0.384);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardImg {
+    width: 250px;
+}
+img{
+  width: 100%;
+}
+
+.cardMapDiv {
+  background-color: rgba(0, 0, 0, 0.301);
+  display: flex;
+  flex-direction: row;
+  max-width: 540px;
+}
+
+.textBlock {
+    
+}
