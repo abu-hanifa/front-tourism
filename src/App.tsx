@@ -1,13 +1,16 @@
 import Header from "./components/Header";
 import styles from "./App.module.css";
 import SearchCountry from "./components/SearchCountry";
+
+import Footer from "./components/footer/Footer";
+
 import { Link, Navigate, Route, Routes } from "react-router-dom";
 import SingUp from "./components/users/SingUp";
 import SingIn from "./components/users/SingIn";
 import { useSelector } from "react-redux";
 import { RootState } from "./components/App/app.store";
 
-//
+
 function App() {
 
   function handleExit () {
@@ -41,6 +44,11 @@ function App() {
         <button>выйти</button>
       </form>
       <div className={styles.background}></div>
+
+      <Header />
+      <SearchCountry />
+      <Footer/>
+
       
       
       <Routes>
@@ -49,6 +57,7 @@ function App() {
       <Route path="/" element={<SearchCountry />} />
       </Routes>
     </div>
+
     </div>
   )
 }
