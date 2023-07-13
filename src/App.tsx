@@ -13,9 +13,7 @@ import { RootState } from "./components/App/app.store";
 
 function App() {
 
-  function handleExit () {
-    localStorage.removeItem('token')
-  }
+  
 
   const token = useSelector((state: RootState) => state.application.token)
   
@@ -40,9 +38,7 @@ function App() {
   return(
     <div>
       <div className={styles.wrapper}>
-      <form onSubmit={handleExit}>
-        <button>выйти</button>
-      </form>
+      
       <div className={styles.background}></div>
 
       <Header />

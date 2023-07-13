@@ -2,8 +2,18 @@ import style from "./Header.module.css";
 import logo from "../../images/logo.png";
 import user from "../../icons/user.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../App/app.store";
+
 
 function Header() {
+
+const tok = useSelector((state: RootState) => state.application.token)
+
+  function handleExit () {
+    localStorage.removeItem('token')
+    location.reload()
+  }
   return (
     <header>
       
@@ -30,7 +40,12 @@ function Header() {
       </div>
       <div className={style.profile}>
         <img src={user} alt="профиль" />
-        <Link className={style.link} to='/email'>Войти</Link>
+        {tok ?  <button type="submit" onClick={handleExit} className={style.butt}>Выйти</button> :  <Link className={style.link} to='/email'>Войти</Link> }
+       
+        
+       
+     
+        
       </div>
     </header>
   );
