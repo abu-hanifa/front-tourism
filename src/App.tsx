@@ -27,7 +27,7 @@ function App() {
       <div className={styles.wrapper}>
         <div className={styles.background}></div>
         <Header />
-        
+        <Footer/>
    
         <Routes>
           <Route path="/register" element={<SingUp />} />
@@ -47,7 +47,7 @@ function App() {
 
       <Header />
       <SearchCountry />
-      <Footer/>
+      
 
       
       
