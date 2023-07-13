@@ -51,7 +51,6 @@ function App() {
     </div>
 
     
-  );
 
       <Header />
       <SearchCountry />
