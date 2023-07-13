@@ -28,12 +28,14 @@ function App() {
         <div className={styles.background}></div>
         <Header />
         
+      
    
         <Routes>
           <Route path="/register" element={<SingUp />} />
           <Route path="/email" element={<SingIn />} />
           <Route path="/" element={<SearchCountry />} />
         </Routes>
+        <Footer/>
       </div>
     );
   }
@@ -47,7 +49,6 @@ function App() {
 
       <Header />
       <SearchCountry />
-      <Footer/>
 
       
       
