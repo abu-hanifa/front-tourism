@@ -6,19 +6,14 @@ import application from "../features/applicationSlice";
 export const store = configureStore({
     reducer:{
         userData,
-       frontBranch
+       application,
         cards
         
 
         
     }
 })
-export type AppDispatch = typeof store.dispatch
-        application
-        
-        
-    }
-})
+
 
 export type AppDispatch = typeof store.dispatch
 export type RootState = ReturnType<typeof store.getState> 
