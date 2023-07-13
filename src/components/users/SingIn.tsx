@@ -33,7 +33,7 @@ function SingIn(): JSX.Element {
       </div>
     <form onSubmit={handleSignIn}>
         {blur ? <div className={style.text}>введите email</div> : <div className={style.text}></div> }
-        <input onBlur={() => setBlur(!email && true)} onFocus={() => setBlur(false)} type="text" placeholder='email' value={email} onChange={handleEmail}/>
+        <input onBlur={() => setBlur(!email && true)} onFocus={() => setBlur(false)} type="email" placeholder='email' value={email} onChange={handleEmail}/>
         {blur1 ? <div className={style.text}>введите Пароль</div> : <div className={style.text}></div>  }
         <input onBlur={() => setBlur1(!password && true)} onFocus={() => setBlur1(false)} type="password" placeholder='Пароль' value={password} onChange={handlePassword}/>
         <div className={style.forgot}>Забыли пароль?</div>

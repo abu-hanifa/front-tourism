@@ -62,7 +62,7 @@ console.log(blur);
     {blur1 ? <div className={style.text}>введите фамилию</div> : <div className={style.text}></div> }
     <input onBlur={() => setBlur1(!lastname && true)} onFocus={() => setBlur1(false)} placeholder='Фамилия' type="text" value={lastname} onChange={handleLastname}/>
     {blur2 ? <div className={style.text}>введите email</div> : <div className={style.text}></div> }
-    <input onBlur={() => setBlur2(!email && true)} onFocus={() => setBlur2(false)} placeholder='email' type="text" value={email} onChange={handleEmail}/>
+    <input onBlur={() => setBlur2(!email && true)} onFocus={() => setBlur2(false)} placeholder='email' type="email" value={email} onChange={handleEmail}/>
     {blur3 ? <div className={style.text}>введите Пароль</div> : <div className={style.text}></div> }
     <input onBlur={() => setBlur3(!password && true)} onFocus={() => setBlur3(false)} placeholder='Пароль' type="password" value={password} onChange={handlePassword}/>
     <button className={style.but}> Зерегистрироваться</button>
