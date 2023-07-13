@@ -1,8 +1,9 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { authSigUp } from '../features/applicationSlice'
 import { AppDispatch } from '../App/app.store'
+import style from './Sing.module.css'
 
 
 
@@ -11,6 +12,10 @@ function SingUp():JSX.Element {
     const [lastname, setLastname] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [blur, setBlur] = useState(false)
+    const [blur1, setBlur1] = useState(false)
+    const [blur2, setBlur2] = useState(false)
+    const [blur3, setBlur3] = useState(false)
 
     const navigate = useNavigate()
     const dispatch  = useDispatch<AppDispatch>()
@@ -19,12 +24,15 @@ function SingUp():JSX.Element {
 
     function handleSignUp (e:FormEvent) {
       e.preventDefault()
-      dispatch(authSigUp({name, lastname, email, password}))
-      setEmail('')
-      setName('')
-      setLastname('')
-      setPassword('')
-      navigate('/email')
+      if(name.trim() && lastname.trim() && email.trim() && password.trim()){
+
+        dispatch(authSigUp({name, lastname, email, password}))
+        setEmail('')
+        setName('')
+        setLastname('')
+        setPassword('')
+        navigate('/email')
+      }
       
     }
 
@@ -40,19 +48,32 @@ function SingUp():JSX.Element {
    function handlePassword (e:ChangeEvent<HTMLInputElement>) {
     setPassword(e.target.value)
    }
+console.log(blur);
 
   return (
-   <form onSubmit={handleSignUp}>
-    <input placeholder='Имя' type="text" value={name} onChange={handleName}/>
-    {!name.trim() && <div>введите имя</div> }
-    <input placeholder='Фамилия' type="text" value={lastname} onChange={handleLastname}/>
-    {!lastname.trim() && <div>введите фамилию</div> }
-    <input placeholder='email' type="text" value={email} onChange={handleEmail}/>
-    {!email.trim() && <div>введите email</div> }
-    <input placeholder='Пароль' type="text" value={password} onChange={handlePassword}/>
-    {!password.trim() && <div>введите Пароль</div> }
-    <button>Add</button>
+    <div  className={style.form}>
+    <div className={style.todo}>
+
+      <h1>Зарегистрироваться!</h1>
+    </div>
+   <form  onSubmit={handleSignUp}>
+    {blur ? <div className={style.text}>введите имя</div> : <div className={style.text}></div>}
+    <input onBlur={() => setBlur(!name && true)} onFocus={() => setBlur(false)} placeholder='Имя' type="text" value={name} onChange={handleName}/>
+    {blur1 ? <div className={style.text}>введите фамилию</div> : <div className={style.text}></div> }
+    <input onBlur={() => setBlur1(!lastname && true)} onFocus={() => setBlur1(false)} placeholder='Фамилия' type="text" value={lastname} onChange={handleLastname}/>
+    {blur2 ? <div className={style.text}>введите email</div> : <div className={style.text}></div> }
+    <input onBlur={() => setBlur2(!email && true)} onFocus={() => setBlur2(false)} placeholder='email' type="text" value={email} onChange={handleEmail}/>
+    {blur3 ? <div className={style.text}>введите Пароль</div> : <div className={style.text}></div> }
+    <input onBlur={() => setBlur3(!password && true)} onFocus={() => setBlur3(false)} placeholder='Пароль' type="password" value={password} onChange={handlePassword}/>
+    <button className={style.but}> Зерегистрироваться</button>
+    <div className={style.line}></div>
+    <div className={style.text1}>Уже есть аккаунт</div>
+    <button className={style.button}>
+    <Link className={style.link} to='/email'>Войти</Link>
+    </button>
+    
    </form>
+    </div>
   )
 }
 

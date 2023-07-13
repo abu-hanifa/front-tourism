@@ -1,0 +1,83 @@
+.form {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+}
+form input {
+    width: 250px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #00000033;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #FFFFFF;
+    
+    /* background-image: url("https://i.ibb.co/1dq8WJb/1681014527-art-oir-mobi-p-sploshnoi-serii-tsvet-art-oboi-1.jpg"  ); */
+    border-radius: 15px;
+    color: black;
+    padding: 30px 50px;
+    /* align-items: center; */
+    
+   
+}
+ .but {
+    margin-top: 19px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #fff;
+    background-color: #2D9CDB;
+    width: 250px;
+    /* box-shadow: 0px 5px 5px rgb(3, 10, 193); */
+    border: none;
+}
+.todo {
+    margin-bottom: 25px;
+}
+.text {
+    font-size: 13px;
+    color: red;
+    height: 20px;
+   
+}
+.line {
+    border: 1px solid gray;
+    margin-top: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.link {
+    color: black;
+}
+.button {
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px;
+    box-shadow:  0px 0px 18px 0px #00000014;
+    
+
+   
+}
+.text1 {
+    text-align: center;
+    font-size: 14px;
+}
+.forgot {
+    font-size: 14px;
+    text-align: end;
+    margin-top: 29px;
+}
+
+
+
