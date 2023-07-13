@@ -1,10 +1,15 @@
 import style from "./Header.module.css";
 import logo from "../../images/logo.png";
 import user from "../../icons/user.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
+      
+      
+
+
       <div className={style.nav_bar}>
         <ul>
           <li>
@@ -25,7 +30,7 @@ function Header() {
       </div>
       <div className={style.profile}>
         <img src={user} alt="профиль" />
-        <span>Log in</span>
+        <Link className={style.link} to='/email'>Войти</Link>
       </div>
     </header>
   );
