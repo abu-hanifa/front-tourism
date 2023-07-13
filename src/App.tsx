@@ -46,15 +46,11 @@ function App() {
       
       <div className={styles.background}></div>
 
-      <Cards/>
+      {/* <Cards/> */}
       
-    </div>
-
     
-  );
 
-      <Header />
-      <SearchCountry />
+     <Header />
 
       
       
@@ -63,9 +59,10 @@ function App() {
       <Route path="/email" element={<Navigate to='/'/>}/>
       <Route path="/" element={<SearchCountry />} />
       </Routes>
+      <Footer/>
+      </div>
     </div>
 
-    </div>
   )
 }
 

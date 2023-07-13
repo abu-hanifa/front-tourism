@@ -13,7 +13,9 @@ const Footer = () => {
 
             <div className={styles.footer_content}>
                 <ul className={styles.list}>
-                    <li>Activity Type</li>
+                    <li>Тип деятельности
+                        <li>Backpa</li>
+                    </li>
                     <li>Attractions</li>
                     <li>Suitability</li>
                     <li>Company</li>

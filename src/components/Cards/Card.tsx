@@ -42,7 +42,7 @@ function Card() {
         desc,
         price
       })
-    );
+    )
   };
 
   useEffect(() => {
