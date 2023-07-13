@@ -46,15 +46,13 @@ function App() {
       
       <div className={styles.background}></div>
 
-      <Cards/>
+      {/* <Cards/> */}
       
-    </div>
+    
 
     
-  );
 
       <Header />
-      <SearchCountry />
 
       
       
@@ -64,6 +62,7 @@ function App() {
       <Route path="/" element={<SearchCountry />} />
       </Routes>
       <Footer/>
+      </div>
     </div>
 
   )
