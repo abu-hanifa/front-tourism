@@ -50,9 +50,7 @@ function App() {
       
     
 
-    
-
-      <Header />
+     <Header />
 
       
       
