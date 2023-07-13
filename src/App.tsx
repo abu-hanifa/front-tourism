@@ -57,6 +57,7 @@ function App() {
       <Route path="/email" element={<Navigate to='/'/>}/>
       <Route path="/" element={<SearchCountry />} />
       </Routes>
+      <Footer/>
     </div>
 
     </div>
