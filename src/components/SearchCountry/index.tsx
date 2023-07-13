@@ -5,6 +5,7 @@ import lupa from "../../icons/lupa.png";
 import { Link } from "react-router-dom";
 //
 function SearchCountry() {
+  
   return (
     <div className={style.search}>
       
